@@ -51,6 +51,11 @@
 - Login ke VPS kamu ( wajib pake user ***root***)
 1. MASUK KE VPS LALU KETIK
 ```
+echo "net.core.default_qdisc=fq" | sudo tee -a /etc/sysctl.conf
+echo "net.ipv4.tcp_congestion_control=bbr" | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p
+
+
 sudo nano /etc/sysctl.conf
 
 net.ipv6.conf.all.disable_ipv6 = 1
