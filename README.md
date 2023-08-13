@@ -51,7 +51,13 @@
 - Login ke VPS kamu ( wajib pake user ***root***)
 1. MASUK KE VPS LALU KETIK
 ```
-sudo su
+sudo nano /etc/sysctl.conf
+
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+
+sudo sysctl -p
 ```
 
 2. Update Dulu VPS NYA
