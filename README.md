@@ -51,6 +51,7 @@
 - Login ke VPS kamu ( wajib pake user ***root***)
 1. MASUK KE VPS LALU KETIK
 ```
+cari tar di systemctl, yg bikin autorun neofetch nya, haha
 # sudo apt purge neofetch
 
 
