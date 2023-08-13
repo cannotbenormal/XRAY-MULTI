@@ -51,6 +51,9 @@
 - Login ke VPS kamu ( wajib pake user ***root***)
 1. MASUK KE VPS LALU KETIK
 ```
+# sudo apt purge neofetch
+
+
 echo "net.core.default_qdisc=fq" | sudo tee -a /etc/sysctl.conf
 echo "net.ipv4.tcp_congestion_control=bbr" | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p
